@@ -6,6 +6,7 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <project name="iText.compile" default="help">
+	
 	<property file="local.properties" />
 	<property file="${user.home}/.ant.properties" />
 	<property file=".ant.properties" />
@@ -13,9 +14,15 @@
 	<path id="itext.classpath">
 	    <pathelement location="${itext.bin}"/>
 		<!-- jars needed for iText (core) -->
-		    <pathelement path="${itext.lib}/${lib.bcmail}"/>
 	    <pathelement path="${itext.lib}/${lib.bcprov}"/>
-	    <pathelement path="${itext.lib}/${lib.bctsp}"/>
+		<pathelement path="${itext.lib}/${lib.bcutil}"/>
+		<pathelement path="${itext.lib}/${lib.bctsp}"/>
+		
+		<!-- not required -->
+		<!--
+		<pathelement path="${itext.lib}/${lib.bcmail}"/>
+        -->
+		
 		<!-- jars needed for RUPS -->
 	    <pathelement path="${itext.lib}/${lib.pdf-renderer}"/>
 	    <pathelement path="${itext.lib}/${lib.dom4j}"/>
@@ -85,22 +92,26 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <target name="make.jar" depends="compile" description="--> makes a jarfile from the iText code">
-        <mkdir dir="${itext.bin}/com/lowagie/text/pdf/fonts" />
-        <copy todir="${itext.bin}/com/lowagie/text/pdf/fonts" overwrite="yes">
-            <fileset dir="${itext.src}/core/com/lowagie/text/pdf/fonts">
+        <mkdir dir="${itext.bin}/com/lowagie/mpl/text/pdf/fonts" />
+        <copy todir="${itext.bin}/com/lowagie/mpl/text/pdf/fonts" overwrite="yes">
+            <fileset dir="${itext.src}/core/com/lowagie/mpl/text/pdf/fonts">
                 <include name="**/*.afm"/>
                 <include name="**/*.html"/>
             </fileset>
         </copy>
-        <copy todir="${itext.bin}/com/lowagie/text/" overwrite="yes">
-            <fileset dir="${itext.src}/core/com/lowagie/text/">
+        <copy todir="${itext.bin}/com/lowagie/mpl/text/" overwrite="yes">
+            <fileset dir="${itext.src}/core/com/lowagie/mpl/text/">
                 <include name="**/*.txt"/>
             </fileset>
         </copy>
         <jar jarfile="${itext.jar}" basedir="${itext.bin}">
             <manifest>
-                <attribute name="Main-Class" value="com.lowagie.tools.ToolboxAvailable"/>
+                <attribute name="Main-Class" value="com.lowagie.mpl.tools.ToolboxAvailable"/>
                 <!-- <attribute name="Class-Path" value="iText-toolbox.jar iText-toolbox-${releasenumber}.jar ${lib.bcmail} ${lib.bcprov} ${lib.bctsp}"/> -->
+            	
+                <attribute name="Implementation-Title" value="${releasetitle}"/>
+                <attribute name="Implementation-Version" value="${releaseversion} (${releasedate})"/> 
+                <attribute name="Implementation-Vendor" value="${releasevendor}"/>
             </manifest>
         </jar>
     </target>
@@ -116,7 +127,13 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <target name="jar.rtf"  depends="compile.rtf" description="--> makes a jarfile from the iText rtf code">
-        <jar jarfile="${itext.rtf.jar}" basedir="${itext.rtf.bin}"/>
+        <jar jarfile="${itext.rtf.jar}" basedir="${itext.rtf.bin}">
+            <manifest>
+                <attribute name="Implementation-Title" value="${releasetitle}"/>
+                <attribute name="Implementation-Version" value="${releaseversion} (${releasedate})"/> 
+                <attribute name="Implementation-Vendor" value="${releasevendor}"/>
+            </manifest>
+        </jar>
     </target>
     
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -131,8 +148,13 @@
         </copy>
 		<jar destfile="${itext.rups.jar}" basedir="${itext.rups.bin}" includes="**/*.class, **/*.png">
 		    <manifest>
-                <attribute name="Main-Class" value="com.lowagie.rups.Rups"/>
+                <attribute name="Main-Class" value="com.lowagie.mpl.rups.Rups"/>
                 <attribute name="Class-Path" value="iText-${releasenumber}.jar ${lib.pdf-renderer} ${lib.bcmail} ${lib.bcprov} ${lib.bctsp} ${lib.dom4j}"/>
+		    	
+                <attribute name="Implementation-Title" value="${releasetitle}"/>
+                <attribute name="Implementation-Version" value="${releaseversion} (${releasedate})"/> 
+                <attribute name="Implementation-Vendor" value="${releasevendor}"/>
+		    	
             </manifest>
 		</jar>
 	</target>
@@ -151,8 +173,13 @@
         </copy>
 		<jar destfile="${itext.toolbox.jar}" basedir="${itext.toolbox.bin}" includes="**/*.class, **/*.png, **/*.txt, **/*.gif">
 		    <manifest>
-                <attribute name="Main-Class" value="com.lowagie.toolbox.Toolbox"/>
+                <attribute name="Main-Class" value="com.lowagie.mpl.toolbox.Toolbox"/>
                 <attribute name="Class-Path" value="iText-${releasenumber}.jar ${lib.bcmail} ${lib.bctsp} ${lib.bcprov}"/>
+		    	
+                <attribute name="Implementation-Title" value="${releasetitle}"/>
+                <attribute name="Implementation-Version" value="${releaseversion} (${releasedate})"/> 
+                <attribute name="Implementation-Vendor" value="${releasevendor}"/>
+		    	
             </manifest>
 		</jar>
 	</target>

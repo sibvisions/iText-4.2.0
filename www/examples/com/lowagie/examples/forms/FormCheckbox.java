@@ -18,15 +18,15 @@ package com.lowagie.examples.forms;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfAnnotation;
-import com.lowagie.text.pdf.PdfAppearance;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfFormField;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfAnnotation;
+import com.lowagie.mpl.text.pdf.PdfAppearance;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfFormField;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Generates an Acroform with a Checkbox

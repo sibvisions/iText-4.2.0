@@ -17,13 +17,13 @@ package com.lowagie.examples.fonts.styles;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Explains the mechanism of Font Style Propagation.

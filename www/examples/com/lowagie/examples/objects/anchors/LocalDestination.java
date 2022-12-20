@@ -16,11 +16,11 @@ package com.lowagie.examples.objects.anchors;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfDestination;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfDestination;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates a document that jumps to a Local Destination upon opening.

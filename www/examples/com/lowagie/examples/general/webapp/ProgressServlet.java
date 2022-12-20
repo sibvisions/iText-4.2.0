@@ -25,10 +25,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * If you want to avoid that your Servlet times out, you should use this ProgressServlet.

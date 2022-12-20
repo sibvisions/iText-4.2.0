@@ -16,12 +16,12 @@ package com.lowagie.examples.html;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.Document;
-import com.lowagie.text.Header;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.html.HtmlTags;
-import com.lowagie.text.html.HtmlWriter;
+import com.lowagie.mpl.text.Anchor;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Header;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.html.HtmlTags;
+import com.lowagie.mpl.text.html.HtmlWriter;
 
 /**
  * Creates a documents with different named actions.

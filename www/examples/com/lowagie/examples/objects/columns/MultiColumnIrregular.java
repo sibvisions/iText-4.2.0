@@ -18,13 +18,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.MultiColumnText;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.MultiColumnText;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * An example using MultiColumnText with irregular columns.

@@ -21,12 +21,12 @@ import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.pdf.PRAcroForm;
-import com.lowagie.text.pdf.PdfCopy;
-import com.lowagie.text.pdf.PdfImportedPage;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.SimpleBookmark;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.pdf.PRAcroForm;
+import com.lowagie.mpl.text.pdf.PdfCopy;
+import com.lowagie.mpl.text.pdf.PdfImportedPage;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.SimpleBookmark;
 
 /**
  * Tool that can be used to concatenate existing PDF files.

@@ -166,28 +166,36 @@
 	<target name="unsign.bcmail">
         <mkdir dir="${itext.jnlp}" />
     	<mkdir dir="${itext.bin.temp}" />
-    	<unjar src="${itext.lib}/bcmail-${bc.jdk}-${bc.version}.jar" dest="${itext.bin.temp}" />
-    	<jar destfile="${itext.jnlp}/bcmail-${bc.jdk}-${bc.version}.jar" basedir="${itext.bin.temp}" includes="**/*.class" />
+    	<unjar src="${itext.lib}/${lib.bcmail}" dest="${itext.bin.temp}" />
+    	<jar destfile="${itext.jnlp}/${lib.bcmail}" basedir="${itext.bin.temp}" includes="**/*.class" />
     	<delete dir="${itext.bin.temp}" />
 	</target>
 
 	<target name="unsign.bcprov">
         <mkdir dir="${itext.jnlp}" />
     	<mkdir dir="${itext.bin.temp}" />
-    	<unjar src="${itext.lib}/bcprov-${bc.jdk}-${bc.version}.jar" dest="${itext.bin.temp}" />
-    	<jar destfile="${itext.jnlp}/bcprov-${bc.jdk}-${bc.version}.jar" basedir="${itext.bin.temp}" includes="**/*.class" />
+    	<unjar src="${itext.lib}/${lib.bcprov}" dest="${itext.bin.temp}" />
+    	<jar destfile="${itext.jnlp}/${lib.bcprov}" basedir="${itext.bin.temp}" includes="**/*.class" />
     	<delete dir="${itext.bin.temp}" />
 	</target>
 
 	<target name="unsign.bctsp">
         <mkdir dir="${itext.jnlp}" />
     	<mkdir dir="${itext.bin.temp}" />
-    	<unjar src="${itext.lib}/bctsp-${bc.jdk}-${bc.version}.jar" dest="${itext.bin.temp}" />
-    	<jar destfile="${itext.jnlp}/bctsp-${bc.jdk}-${bc.version}.jar" basedir="${itext.bin.temp}" includes="**/*.class" />
+    	<unjar src="${itext.lib}/${lib.bctsp}" dest="${itext.bin.temp}" />
+    	<jar destfile="${itext.jnlp}/${lib.bctsp}" basedir="${itext.bin.temp}" includes="**/*.class" />
     	<delete dir="${itext.bin.temp}" />
 	</target>
 
-    <target name="check-keystore" >
+	<target name="unsign.bcutil">
+        <mkdir dir="${itext.jnlp}" />
+    	<mkdir dir="${itext.bin.temp}" />
+    	<unjar src="${itext.lib}/${lib.bcutil}" dest="${itext.bin.temp}" />
+    	<jar destfile="${itext.jnlp}/${lib.bcutil}" basedir="${itext.bin.temp}" includes="**/*.class" />
+    	<delete dir="${itext.bin.temp}" />
+	</target>
+
+   <target name="check-keystore" >
         <condition property="keystore-exists">
             <available file="${itext.keystore.filename}" type="file"/>
         </condition>
@@ -203,7 +211,7 @@
         />
     </target>
  
-    <target name="release.jnlp" depends="unsign.bcmail, unsign.bcprov, unsign.bctsp, keystore">
+    <target name="release.jnlp" depends="unsign.bcmail, unsign.bcprov, unsign.bctsp, unsign.bcutil, keystore">
 		<copy file="${itext.src}/jnlp/rups.jnlp" tofile="${itext.jnlp}/rups.jnlp" overwrite="yes"/>
 		<copy file="${itext.src}/jnlp/toolbox.jnlp" tofile="${itext.jnlp}/toolbox.jnlp" overwrite="yes"/>
 		<copy file="${itext.rups.jar}" tofile="${itext.jnlp}/iText-rups.jar" overwrite="yes"/>

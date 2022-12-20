@@ -17,15 +17,15 @@ package com.lowagie.examples.objects.chunk;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.SplitCharacter;
-import com.lowagie.text.pdf.PdfChunk;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.SplitCharacter;
+import com.lowagie.mpl.text.pdf.PdfChunk;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates the use of the splitcharacter.
@@ -81,7 +81,7 @@ public class SplitChar implements SplitCharacter {
 	}
 
 	/**
-	 * @see com.lowagie.text.SplitCharacter#isSplitCharacter(int, int, int, char[], com.lowagie.text.pdf.PdfChunk[])
+	 * @see com.lowagie.mpl.text.SplitCharacter#isSplitCharacter(int, int, int, char[], com.lowagie.mpl.text.pdf.PdfChunk[])
 	 */
 	public boolean isSplitCharacter(int start, int current, int end, char[] cc, PdfChunk[] ck) {
         char c;

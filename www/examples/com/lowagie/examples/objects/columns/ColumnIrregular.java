@@ -16,16 +16,16 @@ package com.lowagie.examples.objects.columns;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Image;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.ColumnText;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfTemplate;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.ColumnText;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfTemplate;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Writes text in irregular columns that can be added at an absolute position.

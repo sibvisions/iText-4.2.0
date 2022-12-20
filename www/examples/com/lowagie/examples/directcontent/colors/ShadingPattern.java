@@ -16,13 +16,13 @@ package com.lowagie.examples.directcontent.colors;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfShading;
-import com.lowagie.text.pdf.PdfShadingPattern;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfShading;
+import com.lowagie.mpl.text.pdf.PdfShadingPattern;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Shading example

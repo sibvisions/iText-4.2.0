@@ -16,17 +16,17 @@ package com.lowagie.examples.objects.images.tiff;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.Image;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.Barcode128;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.Barcode128;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 /**
  * Example Barcode EAN128.
  */

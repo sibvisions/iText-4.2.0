@@ -16,13 +16,13 @@ package com.lowagie.examples.general.copystamp;
 import java.io.FileOutputStream;
 import java.util.HashMap;
 
-import com.lowagie.text.Element;
-import com.lowagie.text.Image;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfStamper;
 
 /**
  * Reads the pages of an existing PDF file, adds pagenumbers and a watermark.

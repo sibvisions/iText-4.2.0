@@ -15,11 +15,20 @@
 package com.lowagie.examples.forms;
 
 
-import com.lowagie.text.pdf.*;
-
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.lowagie.mpl.text.pdf.PRAcroForm;
+import com.lowagie.mpl.text.pdf.PdfArray;
+import com.lowagie.mpl.text.pdf.PdfDictionary;
+import com.lowagie.mpl.text.pdf.PdfIndirectReference;
+import com.lowagie.mpl.text.pdf.PdfLister;
+import com.lowagie.mpl.text.pdf.PdfName;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfString;
 
 /**
  * Demonstrates the use of PageSize.

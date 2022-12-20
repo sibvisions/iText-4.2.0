@@ -19,16 +19,16 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.TreeMap;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfPageEventHelper;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfPageEventHelper;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates the use of the Generic PageEvent.
@@ -44,7 +44,7 @@ public class Glossary extends PdfPageEventHelper {
     /**
      * All the text that is passed to this event, gets registered in the glossary.
      * 
-	 * @see com.lowagie.text.pdf.PdfPageEventHelper#onGenericTag(com.lowagie.text.pdf.PdfWriter, com.lowagie.text.Document, com.lowagie.text.Rectangle, java.lang.String)
+	 * @see com.lowagie.mpl.text.pdf.PdfPageEventHelper#onGenericTag(com.lowagie.mpl.text.pdf.PdfWriter, com.lowagie.mpl.text.Document, com.lowagie.mpl.text.Rectangle, java.lang.String)
      */
     public void onGenericTag(PdfWriter writer, Document document, Rectangle rect, String text) {
         glossary.put(text, new Integer(writer.getPageNumber()));

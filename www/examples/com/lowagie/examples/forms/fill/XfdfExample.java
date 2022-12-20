@@ -15,10 +15,10 @@ package com.lowagie.examples.forms.fill;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.pdf.AcroFields;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
-import com.lowagie.text.pdf.XfdfReader;
+import com.lowagie.mpl.text.pdf.AcroFields;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfStamper;
+import com.lowagie.mpl.text.pdf.XfdfReader;
 
 /**
  * How to merge an XFDF file with a PDF form.

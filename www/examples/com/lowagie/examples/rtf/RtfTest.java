@@ -22,30 +22,30 @@ package com.lowagie.examples.rtf;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.Annotation;
-import com.lowagie.text.Cell;
-import com.lowagie.text.Chapter;
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.HeaderFooter;
-import com.lowagie.text.Image;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.Section;
-import com.lowagie.text.Table;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.field.RtfTableOfContents;
-import com.lowagie.text.rtf.headerfooter.RtfHeaderFooter;
-import com.lowagie.text.rtf.headerfooter.RtfHeaderFooterGroup;
-import com.lowagie.text.rtf.style.RtfFont;
-import com.lowagie.text.rtf.table.RtfBorder;
-import com.lowagie.text.rtf.table.RtfBorderGroup;
-import com.lowagie.text.rtf.table.RtfCell;
+import com.lowagie.mpl.text.Anchor;
+import com.lowagie.mpl.text.Annotation;
+import com.lowagie.mpl.text.Cell;
+import com.lowagie.mpl.text.Chapter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.HeaderFooter;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.List;
+import com.lowagie.mpl.text.ListItem;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.Section;
+import com.lowagie.mpl.text.Table;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.field.RtfTableOfContents;
+import com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooter;
+import com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooterGroup;
+import com.lowagie.mpl.text.rtf.style.RtfFont;
+import com.lowagie.mpl.text.rtf.table.RtfBorder;
+import com.lowagie.mpl.text.rtf.table.RtfBorderGroup;
+import com.lowagie.mpl.text.rtf.table.RtfCell;
 
 /**
  * This is a test suite in which all kinds of RTF functionality are tested
@@ -81,17 +81,17 @@ public class RtfTest {
                     .setHeaderFooter(
                             new RtfHeaderFooter(new Phrase(
                                     "This is the footer on the title page")),
-                            com.lowagie.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_FIRST_PAGE);
+                            com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_FIRST_PAGE);
             footer
                     .setHeaderFooter(
                             new RtfHeaderFooter(new Phrase(
                                     "This is a left side page")),
-                            com.lowagie.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_LEFT_PAGES);
+                            com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_LEFT_PAGES);
             footer
                     .setHeaderFooter(
                             new RtfHeaderFooter(new Phrase(
                                     "This is a right side page")),
-                            com.lowagie.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_RIGHT_PAGES);
+                            com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooter.DISPLAY_RIGHT_PAGES);
 
             doc.setHeader(header);
             doc.setFooter(footer);
@@ -152,7 +152,7 @@ public class RtfTest {
 
             doc.add(chapter);
 
-            com.lowagie.text.rtf.field.RtfTOCEntry rtfTOC = new com.lowagie.text.rtf.field.RtfTOCEntry(
+            com.lowagie.mpl.text.rtf.field.RtfTOCEntry rtfTOC = new com.lowagie.mpl.text.rtf.field.RtfTOCEntry(
                     "Table Test");
             doc.add(rtfTOC);
 

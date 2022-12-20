@@ -21,15 +21,15 @@ package com.lowagie.examples.rtf.extensions.hf;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Cell;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Table;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.field.RtfPageNumber;
-import com.lowagie.text.rtf.headerfooter.RtfHeaderFooter;
+import com.lowagie.mpl.text.Cell;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Table;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.field.RtfPageNumber;
+import com.lowagie.mpl.text.rtf.headerfooter.RtfHeaderFooter;
 
 /**
  * The ExtendedHeaderFooter example demonstrates the use of the

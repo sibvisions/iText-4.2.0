@@ -15,9 +15,9 @@ package com.lowagie.examples.general.copystamp;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.pdf.PdfEncryptor;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.pdf.PdfEncryptor;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Encrypts an existing PDF file.

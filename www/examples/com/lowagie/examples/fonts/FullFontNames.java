@@ -16,7 +16,7 @@ package com.lowagie.examples.fonts;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-import com.lowagie.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.BaseFont;
 
 /**
  * Retrieving the full font name

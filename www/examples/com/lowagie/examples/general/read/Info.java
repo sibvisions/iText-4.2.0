@@ -16,7 +16,7 @@ package com.lowagie.examples.general.read;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-import com.lowagie.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfReader;
 
 /**
  * Getting information from a PDF file.

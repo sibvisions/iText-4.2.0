@@ -17,14 +17,14 @@ package com.lowagie.examples.general;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.html.HtmlWriter;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.Anchor;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.html.HtmlWriter;
+import com.lowagie.mpl.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
 
 /**
  * Generates simple 'Hello World' PDF, RTF and HTML files.

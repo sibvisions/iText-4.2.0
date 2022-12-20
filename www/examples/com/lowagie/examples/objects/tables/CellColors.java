@@ -16,13 +16,13 @@ package com.lowagie.examples.objects.tables;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * The Cell is derived from the Rectangle object, so we can do all kinds of things with the borders and colors.

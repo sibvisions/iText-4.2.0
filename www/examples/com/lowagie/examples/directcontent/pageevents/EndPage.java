@@ -15,14 +15,14 @@ package com.lowagie.examples.directcontent.pageevents;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.ExceptionConverter;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfPageEventHelper;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.ExceptionConverter;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfPageEventHelper;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates the use of PageEvents.
@@ -52,7 +52,7 @@ public class EndPage extends PdfPageEventHelper {
     }
     
     /**
-     * @see com.lowagie.text.pdf.PdfPageEventHelper#onEndPage(com.lowagie.text.pdf.PdfWriter, com.lowagie.text.Document)
+     * @see com.lowagie.mpl.text.pdf.PdfPageEventHelper#onEndPage(com.lowagie.mpl.text.pdf.PdfWriter, com.lowagie.mpl.text.Document)
      */
     public void onEndPage(PdfWriter writer, Document document) {
         try {

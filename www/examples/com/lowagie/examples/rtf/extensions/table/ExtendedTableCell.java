@@ -22,14 +22,14 @@ import java.awt.Color;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.Table;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.table.RtfBorder;
-import com.lowagie.text.rtf.table.RtfBorderGroup;
-import com.lowagie.text.rtf.table.RtfCell;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.Table;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.table.RtfBorder;
+import com.lowagie.mpl.text.rtf.table.RtfBorderGroup;
+import com.lowagie.mpl.text.rtf.table.RtfCell;
 
 /**
  * The ExtendedTableCell example demonstrates the use of the RtfCell and

@@ -16,16 +16,16 @@ package com.lowagie.examples.directcontent.colors;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.ColumnText;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfGState;
-import com.lowagie.text.pdf.PdfTemplate;
-import com.lowagie.text.pdf.PdfTransparencyGroup;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.ColumnText;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfGState;
+import com.lowagie.mpl.text.pdf.PdfTemplate;
+import com.lowagie.mpl.text.pdf.PdfTransparencyGroup;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates transparency and images.

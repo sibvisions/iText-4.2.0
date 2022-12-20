@@ -16,11 +16,11 @@ package com.lowagie.examples.objects.anchors;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfAction;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates a documents with a javascript action.

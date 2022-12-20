@@ -17,15 +17,15 @@ package com.lowagie.examples.objects.anchors;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfAnnotation;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfDestination;
-import com.lowagie.text.pdf.PdfFileSpecification;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfAction;
+import com.lowagie.mpl.text.pdf.PdfAnnotation;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfDestination;
+import com.lowagie.mpl.text.pdf.PdfFileSpecification;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates a document with some PdfAnnotations.

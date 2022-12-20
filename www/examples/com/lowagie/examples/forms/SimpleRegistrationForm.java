@@ -16,16 +16,16 @@ package com.lowagie.examples.forms;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfFormField;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPCellEvent;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.pdf.TextField;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfFormField;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPCellEvent;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.pdf.TextField;
 
 /**
  * General example using TableEvents and CellEvents.
@@ -65,8 +65,8 @@ public class SimpleRegistrationForm implements PdfPCellEvent {
 	}
 
 	/**
-	 * @see com.lowagie.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.text.pdf.PdfPCell,
-	 *      com.lowagie.text.Rectangle, com.lowagie.text.pdf.PdfContentByte[])
+	 * @see com.lowagie.mpl.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.mpl.text.pdf.PdfPCell,
+	 *      com.lowagie.mpl.text.Rectangle, com.lowagie.mpl.text.pdf.PdfContentByte[])
 	 */
 	public void cellLayout(PdfPCell cell, Rectangle position,
 			PdfContentByte[] canvases) {

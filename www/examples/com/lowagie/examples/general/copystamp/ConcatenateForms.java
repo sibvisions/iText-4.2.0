@@ -14,8 +14,8 @@ package com.lowagie.examples.general.copystamp;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.pdf.PdfCopyFields;
-import com.lowagie.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfCopyFields;
+import com.lowagie.mpl.text.pdf.PdfReader;
 
 /**
  * Concatenates 2 PDF files with forms. The resulting PDF has 1 merged AcroForm.

@@ -16,17 +16,17 @@ package com.lowagie.examples.objects.tables.alternatives;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Cell;
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.Table;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Cell;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.Table;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Shows how a table is split if it doesn't fit the page.

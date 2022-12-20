@@ -17,13 +17,13 @@ import java.awt.geom.AffineTransform;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfTemplate;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfTemplate;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Uses the AffineTransform class to change the transformation matrix.

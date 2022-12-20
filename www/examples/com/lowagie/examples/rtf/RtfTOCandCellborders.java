@@ -23,18 +23,18 @@ import java.awt.Color;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Chapter;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.Table;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.field.RtfTOCEntry;
-import com.lowagie.text.rtf.field.RtfTableOfContents;
-import com.lowagie.text.rtf.table.RtfBorder;
-import com.lowagie.text.rtf.table.RtfBorderGroup;
-import com.lowagie.text.rtf.table.RtfCell;
+import com.lowagie.mpl.text.Chapter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.Table;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.field.RtfTOCEntry;
+import com.lowagie.mpl.text.rtf.field.RtfTableOfContents;
+import com.lowagie.mpl.text.rtf.table.RtfBorder;
+import com.lowagie.mpl.text.rtf.table.RtfBorderGroup;
+import com.lowagie.mpl.text.rtf.table.RtfCell;
 
 /**
  * Generates an RTF document with a Table of Contents and a Table with special Cellborders.

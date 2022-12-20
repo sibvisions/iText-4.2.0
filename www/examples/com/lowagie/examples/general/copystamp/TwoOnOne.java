@@ -15,13 +15,13 @@ package com.lowagie.examples.general.copystamp;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfImportedPage;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfImportedPage;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Reads the pages of an existing PDF file and puts 2 pages from the existing doc

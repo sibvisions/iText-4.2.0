@@ -17,24 +17,24 @@ import java.awt.Color;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.Image;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.ColumnText;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfBorderDictionary;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfFormField;
-import com.lowagie.text.pdf.PdfLayer;
-import com.lowagie.text.pdf.PdfLayerMembership;
-import com.lowagie.text.pdf.PdfTemplate;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.pdf.TextField;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.ColumnText;
+import com.lowagie.mpl.text.pdf.PdfAction;
+import com.lowagie.mpl.text.pdf.PdfBorderDictionary;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfFormField;
+import com.lowagie.mpl.text.pdf.PdfLayer;
+import com.lowagie.mpl.text.pdf.PdfLayerMembership;
+import com.lowagie.mpl.text.pdf.PdfTemplate;
+import com.lowagie.mpl.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.pdf.TextField;
 
 /**
  * Demonstrates the use of layers.

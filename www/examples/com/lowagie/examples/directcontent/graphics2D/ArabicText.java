@@ -15,10 +15,10 @@ package com.lowagie.examples.directcontent.graphics2D;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Draws arabic text using java.awt.Graphics2D

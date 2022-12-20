@@ -16,12 +16,12 @@ package com.lowagie.examples.objects.images;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Testing Image alignment.

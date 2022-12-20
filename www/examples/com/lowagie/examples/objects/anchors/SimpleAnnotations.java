@@ -17,15 +17,15 @@ package com.lowagie.examples.objects.anchors;
 import java.io.FileOutputStream;
 import java.net.URL;
 
-import com.lowagie.text.Annotation;
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Image;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Annotation;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfAction;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates two documents with different types of Annotations.

@@ -15,12 +15,12 @@ package com.lowagie.examples.objects.tables.pdfptable;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Writing a PdfPTable at an absolute position.

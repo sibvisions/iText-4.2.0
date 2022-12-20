@@ -15,11 +15,11 @@ package com.lowagie.examples.objects;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Font;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Selects the appropriate fonts that contain the glyphs needed to render text correctly.

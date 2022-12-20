@@ -15,11 +15,11 @@ package com.lowagie.examples.forms.fill;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.pdf.AcroFields;
-import com.lowagie.text.pdf.FdfReader;
-import com.lowagie.text.pdf.FdfWriter;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
+import com.lowagie.mpl.text.pdf.AcroFields;
+import com.lowagie.mpl.text.pdf.FdfReader;
+import com.lowagie.mpl.text.pdf.FdfWriter;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfStamper;
 
 /**
  * How to create an FDF file.

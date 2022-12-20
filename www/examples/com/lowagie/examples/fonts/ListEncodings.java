@@ -17,8 +17,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.pdf.BaseFont;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.pdf.BaseFont;
 
 /**
  * Listing the encodings of font comic

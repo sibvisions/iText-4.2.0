@@ -21,11 +21,11 @@ package com.lowagie.examples.rtf.features.shape;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.graphic.RtfShape;
-import com.lowagie.text.rtf.graphic.RtfShapePosition;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.graphic.RtfShape;
+import com.lowagie.mpl.text.rtf.graphic.RtfShapePosition;
 
 
 /**

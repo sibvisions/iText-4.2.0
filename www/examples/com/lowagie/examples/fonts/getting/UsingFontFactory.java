@@ -19,12 +19,12 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Special rendering of Chunks.

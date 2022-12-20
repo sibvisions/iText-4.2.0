@@ -16,15 +16,15 @@ package com.lowagie.examples.directcontent.pageevents;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Font;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfDestination;
-import com.lowagie.text.pdf.PdfOutline;
-import com.lowagie.text.pdf.PdfPageEventHelper;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfDestination;
+import com.lowagie.mpl.text.pdf.PdfOutline;
+import com.lowagie.mpl.text.pdf.PdfPageEventHelper;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates a document with outlines (bookmarks).

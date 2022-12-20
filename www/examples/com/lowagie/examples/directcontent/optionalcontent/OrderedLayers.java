@@ -16,20 +16,20 @@ package com.lowagie.examples.directcontent.optionalcontent;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.ColumnText;
-import com.lowagie.text.pdf.PdfArray;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfDictionary;
-import com.lowagie.text.pdf.PdfLayer;
-import com.lowagie.text.pdf.PdfLayerMembership;
-import com.lowagie.text.pdf.PdfName;
-import com.lowagie.text.pdf.PdfOCProperties;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.ColumnText;
+import com.lowagie.mpl.text.pdf.PdfArray;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfDictionary;
+import com.lowagie.mpl.text.pdf.PdfLayer;
+import com.lowagie.mpl.text.pdf.PdfLayerMembership;
+import com.lowagie.mpl.text.pdf.PdfName;
+import com.lowagie.mpl.text.pdf.PdfOCProperties;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates how to order optional content groups.

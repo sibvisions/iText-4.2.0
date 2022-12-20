@@ -16,13 +16,13 @@ package com.lowagie.examples.objects.images.tiff;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Image;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfWriter;
-import com.lowagie.text.pdf.RandomAccessFileOrArray;
-import com.lowagie.text.pdf.codec.TiffImage;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.pdf.RandomAccessFileOrArray;
+import com.lowagie.mpl.text.pdf.codec.TiffImage;
 
 /**
  * Combines 2 tiffs, one with odd, another with even pages into 1 combined PDF

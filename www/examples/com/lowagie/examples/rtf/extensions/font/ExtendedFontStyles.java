@@ -21,13 +21,13 @@ package com.lowagie.examples.rtf.extensions.font;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.rtf.RtfWriter2;
-import com.lowagie.text.rtf.style.RtfFont;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.rtf.RtfWriter2;
+import com.lowagie.mpl.text.rtf.style.RtfFont;
 
 /**
  * The ExtendedFontStyles class demonstrates the use of the extended
@@ -36,7 +36,7 @@ import com.lowagie.text.rtf.style.RtfFont;
  * 
  * @version $Revision: 3373 $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
- * @see com.lowagie.text.rtf.style.RtfFont
+ * @see com.lowagie.mpl.text.rtf.style.RtfFont
  */
 public class ExtendedFontStyles {
     /**

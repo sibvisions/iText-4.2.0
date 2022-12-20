@@ -15,12 +15,12 @@ package com.lowagie.examples.objects.tables;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Add a table to a PDF with document.add() and if the cell doesn't fit, the row is split in two parts.

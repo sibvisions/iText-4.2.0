@@ -17,14 +17,14 @@ package com.lowagie.examples.objects;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.GreekList;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.RomanList;
-import com.lowagie.text.ZapfDingbatsList;
-import com.lowagie.text.ZapfDingbatsNumberList;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.GreekList;
+import com.lowagie.mpl.text.ListItem;
+import com.lowagie.mpl.text.RomanList;
+import com.lowagie.mpl.text.ZapfDingbatsList;
+import com.lowagie.mpl.text.ZapfDingbatsNumberList;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates some List functionality.

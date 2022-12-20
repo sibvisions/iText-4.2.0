@@ -16,8 +16,9 @@ package com.lowagie.examples.general.read;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.pdf.PdfName;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Reading an encrypted PDF file (you need the owner password to do this).
@@ -36,6 +37,7 @@ public class ReadEncrypted {
 					"info_encrypted.txt"));
 			PdfReader r = new PdfReader("HelloEncrypted.pdf", "Hello"
 						.getBytes());
+
 			out.write(r.getInfo().toString());
 			out.write("\r\n");
 			int permissions = r.getPermissions();

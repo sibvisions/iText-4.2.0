@@ -17,16 +17,16 @@ package com.lowagie.examples.objects;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.html.HtmlWriter;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.List;
+import com.lowagie.mpl.text.ListItem;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.html.HtmlWriter;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Demonstrates some List functionality.

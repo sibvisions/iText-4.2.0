@@ -17,11 +17,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Image;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.html.HtmlWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.html.HtmlWriter;
 
 /**
  * Images example that uses the complete URL of the Image.

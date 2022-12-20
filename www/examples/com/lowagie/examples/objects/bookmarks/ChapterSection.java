@@ -17,16 +17,16 @@ package com.lowagie.examples.objects.bookmarks;
 import java.awt.Color;
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Chapter;
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Section;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Chapter;
+import com.lowagie.mpl.text.Chunk;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Element;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.FontFactory;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Section;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * Creates a document with outlines (bookmarks) using the Chapter and Section object.

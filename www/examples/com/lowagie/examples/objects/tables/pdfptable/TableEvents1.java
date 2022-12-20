@@ -15,24 +15,24 @@ package com.lowagie.examples.objects.tables.pdfptable;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Font;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Phrase;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.BaseFont;
-import com.lowagie.text.pdf.PdfAction;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfPTableEvent;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Font;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Phrase;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.BaseFont;
+import com.lowagie.mpl.text.pdf.PdfAction;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfPTableEvent;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * General example using TableEvents.
  */
 public class TableEvents1 implements PdfPTableEvent {
     /**
-     * @see com.lowagie.text.pdf.PdfPTableEvent#tableLayout(com.lowagie.text.pdf.PdfPTable, float[][], float[], int, int, com.lowagie.text.pdf.PdfContentByte[])
+     * @see com.lowagie.mpl.text.pdf.PdfPTableEvent#tableLayout(com.lowagie.mpl.text.pdf.PdfPTable, float[][], float[], int, int, com.lowagie.mpl.text.pdf.PdfContentByte[])
      */
     public void tableLayout(PdfPTable table, float[][] width, float[] heights, int headerRows, int rowStart, PdfContentByte[] canvases) {
     	

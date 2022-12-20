@@ -1,7 +1,5 @@
 <%@
-page import="java.io.*,
-			 com.lowagie.text.*,
-			 com.lowagie.text.pdf.*"
+page import="java.io.*,com.lowagie.mpl.text.*,com.lowagie.mpl.text.pdf.*"
 %><%
 //
 // Template JSP file for iText

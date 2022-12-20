@@ -15,15 +15,15 @@ package com.lowagie.examples.objects.tables.pdfptable;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.Image;
-import com.lowagie.text.PageSize;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPCellEvent;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.Image;
+import com.lowagie.mpl.text.PageSize;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPCellEvent;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * General example using CellEvents.
@@ -31,8 +31,8 @@ import com.lowagie.text.pdf.PdfWriter;
 public class CellEvents implements PdfPCellEvent {
 
 	/**
-	 * @see com.lowagie.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.text.pdf.PdfPCell,
-	 *      com.lowagie.text.Rectangle, com.lowagie.text.pdf.PdfContentByte[])
+	 * @see com.lowagie.mpl.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.mpl.text.pdf.PdfPCell,
+	 *      com.lowagie.mpl.text.Rectangle, com.lowagie.mpl.text.pdf.PdfContentByte[])
 	 */
 	public void cellLayout(PdfPCell cell, Rectangle position,
 			PdfContentByte[] canvases) {

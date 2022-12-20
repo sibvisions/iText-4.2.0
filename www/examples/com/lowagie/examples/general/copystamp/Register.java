@@ -15,9 +15,9 @@ package com.lowagie.examples.general.copystamp;
 
 import java.io.FileOutputStream;
 
-import com.lowagie.text.pdf.AcroFields;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
+import com.lowagie.mpl.text.pdf.AcroFields;
+import com.lowagie.mpl.text.pdf.PdfReader;
+import com.lowagie.mpl.text.pdf.PdfStamper;
 
 /**
  * Fill in a simple registration form.

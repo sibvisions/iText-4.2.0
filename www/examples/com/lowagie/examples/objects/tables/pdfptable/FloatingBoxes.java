@@ -16,16 +16,16 @@ package com.lowagie.examples.objects.tables.pdfptable;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Paragraph;
-import com.lowagie.text.Rectangle;
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPCellEvent;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfPTableEvent;
-import com.lowagie.text.pdf.PdfWriter;
+import com.lowagie.mpl.text.Document;
+import com.lowagie.mpl.text.DocumentException;
+import com.lowagie.mpl.text.Paragraph;
+import com.lowagie.mpl.text.Rectangle;
+import com.lowagie.mpl.text.pdf.PdfContentByte;
+import com.lowagie.mpl.text.pdf.PdfPCell;
+import com.lowagie.mpl.text.pdf.PdfPCellEvent;
+import com.lowagie.mpl.text.pdf.PdfPTable;
+import com.lowagie.mpl.text.pdf.PdfPTableEvent;
+import com.lowagie.mpl.text.pdf.PdfWriter;
 
 /**
  * General example using TableEvents and CellEvents.
@@ -33,8 +33,8 @@ import com.lowagie.text.pdf.PdfWriter;
 public class FloatingBoxes implements PdfPCellEvent, PdfPTableEvent {
 
 	/**
-	 * @see com.lowagie.text.pdf.PdfPTableEvent#tableLayout(com.lowagie.text.pdf.PdfPTable,
-	 *      float[][], float[], int, int, com.lowagie.text.pdf.PdfContentByte[])
+	 * @see com.lowagie.mpl.text.pdf.PdfPTableEvent#tableLayout(com.lowagie.mpl.text.pdf.PdfPTable,
+	 *      float[][], float[], int, int, com.lowagie.mpl.text.pdf.PdfContentByte[])
 	 */
 	public void tableLayout(PdfPTable table, float[][] width, float[] height,
 			int headerRows, int rowStart, PdfContentByte[] canvases) {
@@ -51,8 +51,8 @@ public class FloatingBoxes implements PdfPCellEvent, PdfPTableEvent {
 	}
 
 	/**
-	 * @see com.lowagie.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.text.pdf.PdfPCell,
-	 *      com.lowagie.text.Rectangle, com.lowagie.text.pdf.PdfContentByte[])
+	 * @see com.lowagie.mpl.text.pdf.PdfPCellEvent#cellLayout(com.lowagie.mpl.text.pdf.PdfPCell,
+	 *      com.lowagie.mpl.text.Rectangle, com.lowagie.mpl.text.pdf.PdfContentByte[])
 	 */
 	public void cellLayout(PdfPCell cell, Rectangle position,
 			PdfContentByte[] canvases) {
