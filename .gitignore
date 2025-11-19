@@ -1,2 +1,10 @@
 /classes
 /build
+
+/lib/iText.jar
+/lib/iText-rtf.jar
+/lib/iText-rups.jar
+/lib/iText-toolbox.jar
+/lib/iTextAsian.jar
+/lib/iTextAsianCmaps.jar
+/lib/.keystore
