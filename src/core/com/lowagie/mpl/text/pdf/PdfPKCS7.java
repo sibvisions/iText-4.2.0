@@ -355,8 +355,18 @@ public class PdfPKCS7 {
                 }
                 if (seq.getObjectAt(k) instanceof ASN1TaggedObject) {
                     ASN1TaggedObject tag = (ASN1TaggedObject)seq.getObjectAt(k);
-                    if (tag.getObject() instanceof ASN1Sequence) {
-                        seq = (ASN1Sequence)tag.getObject();
+                    
+                    Object obj;
+                    
+                    if (tag.isExplicit()) {
+                    	obj = tag.getExplicitBaseObject().toASN1Primitive();
+                    }
+                    else {
+                    	obj = tag.getBaseObject().toASN1Primitive();
+                    }
+                    
+                    if (obj instanceof ASN1Sequence) {
+                        seq = (ASN1Sequence)obj;
                         ret = false;
                         break;
                     }
@@ -402,7 +412,19 @@ public class PdfPKCS7 {
             ASN1ObjectIdentifier objId = (ASN1ObjectIdentifier)signedData.getObjectAt(0);
             if (!objId.getId().equals(ID_PKCS7_SIGNED_DATA))
                 throw new IllegalArgumentException(MessageLocalization.getComposedMessage("not.a.valid.pkcs.7.object.not.signed.data"));
-            ASN1Sequence content = (ASN1Sequence)((DERTaggedObject)signedData.getObjectAt(1)).getObject();
+            
+            DERTaggedObject tag = (DERTaggedObject)signedData.getObjectAt(1);
+            
+            Object obj;
+            
+            if (tag.isExplicit()) {
+            	obj = tag.getExplicitBaseObject().toASN1Primitive();
+            }
+            else {
+            	obj = tag.getBaseObject().toASN1Primitive();
+            }
+            
+            ASN1Sequence content = (ASN1Sequence)obj;
             // the positions that we care are:
             //     0 - version
             //     1 - digestAlgorithms
@@ -434,7 +456,17 @@ public class PdfPKCS7 {
             // the possible ID_PKCS7_DATA
             ASN1Sequence rsaData = (ASN1Sequence)content.getObjectAt(2);
             if (rsaData.size() > 1) {
-                DEROctetString rsaDataContent = (DEROctetString)((DERTaggedObject)rsaData.getObjectAt(1)).getObject();
+            	
+            	tag = (DERTaggedObject)rsaData.getObjectAt(1);
+            	
+	            if (tag.isExplicit()) {
+	            	obj = tag.getExplicitBaseObject().toASN1Primitive();
+	            }
+	            else {
+	            	obj = tag.getBaseObject().toASN1Primitive();
+	            }
+            	
+                DEROctetString rsaDataContent = (DEROctetString)obj;
                 RSAdata = rsaDataContent.getOctets();
             }
 
@@ -487,7 +519,15 @@ public class PdfPKCS7 {
                             ASN1TaggedObject tg = (ASN1TaggedObject)seqout.getObjectAt(j);
                             if (tg.getTagNo() != 1)
                                 continue;
-                            ASN1Sequence seqin = (ASN1Sequence)tg.getObject();
+                            
+		                    if (tg.isExplicit()) {
+		                    	obj = tg.getExplicitBaseObject().toASN1Primitive();
+		                    }
+		                    else {
+		                    	obj = tg.getBaseObject().toASN1Primitive();
+		                    }
+                            
+                            ASN1Sequence seqin = (ASN1Sequence)obj;
                             findOcsp(seqin);
                         }
                     }
